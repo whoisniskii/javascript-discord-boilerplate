@@ -1,0 +1,11 @@
+# Files
+*-lock.json
+yarn.lock
+
+# Folders
+node_modules
+src/logs
+.idea
+
+# Dot files
+.env

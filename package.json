@@ -1,0 +1,35 @@
+{
+  "name": "javascript-discord-boilerplate",
+  "description": "A boilerplate for Javascript discord bot applications.",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/Launcher.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whoisniskii/javascript-discord-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whoisniskii/javascript-discord-boilerplate/issues"
+  },
+  "homepage": "https://github.com/whoisniskii/javascript-discord-boilerplate#readme",
+  "scripts": {
+    "lint:fix": "npx eslint src --fix",
+    "start": "cd src && node Launcher.js"
+  },
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "author": "Nicolas Ribeiro <niskii@denkylabs.com>",
+  "dependencies": {
+    "discord.js": "14.0.3",
+    "dotenv": "16.0.1",
+    "winston": "3.8.1"
+  },
+  "devDependencies": {
+    "eslint": "8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.2"
+  }
+}
