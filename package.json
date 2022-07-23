@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/whoisniskii/javascript-discord-boilerplate#readme",
   "scripts": {
+    "lint": "npx eslint src",
     "lint:fix": "npx eslint src --fix",
     "start": "cd src && node Launcher.js"
   },
