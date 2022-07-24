@@ -1,4 +1,4 @@
-import { readdirSync } from 'fs';
+import { readdir } from 'node:fs/promises';
 
 export class EventManager {
   constructor(client) {
@@ -6,16 +6,13 @@ export class EventManager {
   }
 
   async loadEvents() {
-    const eventFiles = readdirSync('./listeners');
-
-    for await (const file of eventFiles) {
-      if (!file.endsWith('.js')) continue;
-
-      const { default: EventClass } = await import(`../listeners/${file}`);
-      const event = new EventClass();
-      this.client.on(event.eventName, (...args) => event.execute(this.client, ...args));
+    const events = (await readdir('./listeners/')).filter(file => file.endsWith('.js'));
+    for await (const event of events) {
+      const { default: EventClass } = await import(`../listeners/${event}`);
+      const evt = new EventClass();
+      this.client.on(evt.eventName, (...args) => evt.execute(this.client, ...args));
     }
 
-    this.client.logger.info(`Loaded ${eventFiles.length} events successfully!`, { tags: ['Events'] });
+    this.client.logger.info(`Loaded ${events.length} events successfully!`, { tags: ['Events'] });
   }
 }
