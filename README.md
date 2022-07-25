@@ -1,16 +1,36 @@
-# 🔨 Javascript Discord Boilerplate
-A boilerplate for Javascript discord bot applications.
+# Javascript Discord Boilerplate
+<div align="center">
+    <p>
+        <a href="https://github.com/whoisniskii/javascript-discord-boilerplate/actions"><img src="https://github.com/whoisniskii/javascript-discord-boilerplate/actions/workflows/ci.yml/badge.svg"></a>
+    </p>
+</div>
 
-## ⚙ Self-hosting
-> ⚠️ Support will not be provided for self-hosted instances. Issues with self-hosted instances opened in this repository will be closed immediately.
+## Getting Started
+To start, just click the [use template link](https://github.com/whoisniskii/javascript-discord-boilerplate/generate) (or the green button).
 
-1. Create a Discord application. [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
-2. Install Node.js v16.9.0 or newer.
-3. Fork or clone this repository.
-4. Install yarn using `npm i -g yarn`.
-5. Install all dependencies using `yarn install`.
-6. Rename `.env.example` to `.env` and fill out the values.
-7. Start the bot using `yarn start`.
+Create a Discord application. [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+
+Rename `.env.example` to `.env` and fill out the values.
+
+### Install all the dependencies with:
+
+| Package Manager     |  Command             |
+| ------------------- | -------------------- |
+| **Yarn**            | `yarn`               |
+| **npm**             | `npm install`        |
+| **pnpm**            | `pnpm install`       |
+
+### Start the bot with:
+| Package Manager     | Command          |
+| ------------------- |------------------|
+| **Yarn**            | `yarn start`     |
+| **npm**             | `npm run start`  |
+| **pnpm**            | `pnpm run start` |
+
+## Available Scripts
++ `start`: Starts the bot.
++ `lint`: Lint source files and tests.
++ `lint:fix`: Lint source files and tests and fix them.
 
 ## License
 This project is licensed under the [GPL-3.0](LICENSE) license.

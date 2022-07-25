@@ -1,7 +1,7 @@
 {
   "name": "javascript-discord-boilerplate",
   "description": "A boilerplate for Javascript discord bot applications.",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "private": true,
   "main": "./src/Launcher.js",
   "type": "module",
