@@ -18,7 +18,7 @@
     "lint:fix": "npx eslint src --fix",
     "start": "cd src && node --max_old_space_size=512 --optimize_for_size --expose-gc --gc-interval=1 Launcher.js"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "engines": {
     "node": ">=16.9.0"
   },
